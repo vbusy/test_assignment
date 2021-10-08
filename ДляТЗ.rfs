@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Robot>
+  <Studio Version="1.0.2.0" />
+  <Schema>
+    <Base.Sequence type_guid="32c6fcaa-cbe4-4fab-afd9-8113b8a5190b" Name="" Description="" GUID="d7792821-7431-49fc-a346-ed5c275e4003" Next="" Previous="" Parent="" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+      <List>
+        <Web.OpenBrowser type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11000" Name="Открыть браузер" Description="" GUID="db25b599-5735-412d-b4af-1ea1580c3483" Next="e1745110-5493-4f0a-8928-8051df884e28" Previous="" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Web|open" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <BrowserName>Chrome</BrowserName>
+            <Profile>default</Profile>
+            <RunBackground>false</RunBackground>
+            <LeaveOpen>true</LeaveOpen>
+            <CollectExistingPages>false</CollectExistingPages>
+            <Extension></Extension>
+            <ContextProperty>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextProperty>
+          </Properties>
+        </Web.OpenBrowser>
+        <Web.Navigate type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11001" Name="Перейти по URL" Description="" GUID="e1745110-5493-4f0a-8928-8051df884e28" Next="97433deb-32e0-4b7a-94d7-e8eec390d021" Previous="db25b599-5735-412d-b4af-1ea1580c3483" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Web|browser" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <URL>www.moex.com</URL>
+            <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+          </Properties>
+        </Web.Navigate>
+        <Vision.ScreenShot type_guid="FED945E8-9BC2-4545-8856-E19F82FA4E51" Name="Снять область" Description="" GUID="97433deb-32e0-4b7a-94d7-e8eec390d021" Next="b0d5f4a1-98dd-4afd-af89-ccdd07f12fc1" Previous="e1745110-5493-4f0a-8928-8051df884e28" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Visual spy|screenshot" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <UseDirectX>false</UseDirectX>
+            <X>470</X>
+            <Y>360</Y>
+            <Width>138</Width>
+            <Height>39</Height>
+            <ReturnValueVariable>d4649381-ab0e-4b71-b85c-e9e1918bad72</ReturnValueVariable>
+          </Properties>
+        </Vision.ScreenShot>
+        <Vision.FindOnScreenFirst type_guid="82C0A710-D0B5-45EA-8807-A2236BE355B1" Name="Найти на экране" Description="" GUID="b0d5f4a1-98dd-4afd-af89-ccdd07f12fc1" Next="a690dd20-7cc6-489d-9cea-0c5e975fb1bf" Previous="97433deb-32e0-4b7a-94d7-e8eec390d021" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Visual spy|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <GiveCenter>false</GiveCenter>
+            <ReturnValueVariable>d4649381-ab0e-4b71-b85c-e9e1918bad72</ReturnValueVariable>
+            <Data>d4649381-ab0e-4b71-b85c-e9e1918bad72</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+          </Properties>
+        </Vision.FindOnScreenFirst>
+        <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="a690dd20-7cc6-489d-9cea-0c5e975fb1bf" Next="311d890f-e9c4-46bc-b47d-9b499a266f4a" Previous="b0d5f4a1-98dd-4afd-af89-ccdd07f12fc1" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Location>d4649381-ab0e-4b71-b85c-e9e1918bad72</Location>
+            <Xfrom>0</Xfrom>
+            <Yfrom>0</Yfrom>
+          </Properties>
+        </SimulateSystem.MouseLeftClick>
+        <Vision.ScreenShot type_guid="FED945E8-9BC2-4545-8856-E19F82FA4E51" Name="Снять область" Description="" GUID="311d890f-e9c4-46bc-b47d-9b499a266f4a" Next="ae8be4c9-04d2-407a-a18d-5cc73161fae9" Previous="a690dd20-7cc6-489d-9cea-0c5e975fb1bf" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Visual spy|screenshot" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <UseDirectX>false</UseDirectX>
+            <X>60</X>
+            <Y>420</Y>
+            <Width>14</Width>
+            <Height>18</Height>
+            <ReturnValueVariable>6e850a5f-6a0c-4d93-a8ae-cb8a09dac983</ReturnValueVariable>
+          </Properties>
+        </Vision.ScreenShot>
+        <Vision.FindOnScreenFirst type_guid="82C0A710-D0B5-45EA-8807-A2236BE355B1" Name="Найти на экране" Description="" GUID="ae8be4c9-04d2-407a-a18d-5cc73161fae9" Next="17641a73-9a08-42d7-ae50-691428ddd9d5" Previous="311d890f-e9c4-46bc-b47d-9b499a266f4a" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Visual spy|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <GiveCenter>false</GiveCenter>
+            <ReturnValueVariable>6e850a5f-6a0c-4d93-a8ae-cb8a09dac983</ReturnValueVariable>
+            <Data>6e850a5f-6a0c-4d93-a8ae-cb8a09dac983</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+          </Properties>
+        </Vision.FindOnScreenFirst>
+        <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="17641a73-9a08-42d7-ae50-691428ddd9d5" Next="5d540a94-f86a-44c6-b05c-bca256bac982" Previous="ae8be4c9-04d2-407a-a18d-5cc73161fae9" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Location>6e850a5f-6a0c-4d93-a8ae-cb8a09dac983</Location>
+            <Xfrom>0</Xfrom>
+            <Yfrom>0</Yfrom>
+          </Properties>
+        </SimulateSystem.MouseLeftClick>
+        <Web.FindComboBoxElement type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11021" Name="Найти элемент в комбобоксе" Description="" GUID="5d540a94-f86a-44c6-b05c-bca256bac982" Next="1bb92890-e4b8-4f0b-b719-2451d713ed61" Previous="17641a73-9a08-42d7-ae50-691428ddd9d5" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Web|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <NameElement>Срочный рынок</NameElement>
+            <XPath>/html/body/div[3]/div[2]/div/div/div/div[1]/div/div[2]/div[4]/div[2]/div[1]/div/div[3]/a</XPath>
+            <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+          </Properties>
+        </Web.FindComboBoxElement>
+        <Web.FindComboBoxElement type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11021" Name="Найти элемент в комбобоксе" Description="" GUID="1bb92890-e4b8-4f0b-b719-2451d713ed61" Next="1c94ed44-26ad-40da-9391-be21965daf1d" Previous="5d540a94-f86a-44c6-b05c-bca256bac982" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Web|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <NameElement>Индикативные курсы</NameElement>
+            <XPath>//*[@id="ctl00_frmLeftMenuWrap"]/div/div/div/div[2]/div/a[13]/div/span/div</XPath>
+            <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+          </Properties>
+        </Web.FindComboBoxElement>
+        <Vision.ScreenShot type_guid="FED945E8-9BC2-4545-8856-E19F82FA4E51" Name="Снять область" Description="" GUID="1c94ed44-26ad-40da-9391-be21965daf1d" Next="39cf958a-fc3e-42d9-bd5f-2b9e8aff56db" Previous="1bb92890-e4b8-4f0b-b719-2451d713ed61" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Visual spy|screenshot" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <UseDirectX>false</UseDirectX>
+            <X>470</X>
+            <Y>360</Y>
+            <Width>138</Width>
+            <Height>39</Height>
+            <ReturnValueVariable>bdaf4493-b0a2-47c4-a149-c5e9074772e6</ReturnValueVariable>
+          </Properties>
+        </Vision.ScreenShot>
+        <Vision.FindOnScreenFirst type_guid="82C0A710-D0B5-45EA-8807-A2236BE355B1" Name="Найти на экране" Description="" GUID="39cf958a-fc3e-42d9-bd5f-2b9e8aff56db" Next="ac95a868-c4af-4b39-8919-90fe1b6232a7" Previous="1c94ed44-26ad-40da-9391-be21965daf1d" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Visual spy|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <GiveCenter>false</GiveCenter>
+            <ReturnValueVariable>bdaf4493-b0a2-47c4-a149-c5e9074772e6</ReturnValueVariable>
+            <Data>bdaf4493-b0a2-47c4-a149-c5e9074772e6</Data>
+            <SimilarityRate>0.75</SimilarityRate>
+          </Properties>
+        </Vision.FindOnScreenFirst>
+        <SimulateSystem.MouseLeftClick type_guid="678f6940-3fa1-4c95-9207-a6cf798fb135" Name="Клик ЛКМ" Description="" GUID="ac95a868-c4af-4b39-8919-90fe1b6232a7" Next="a19d9041-3a41-4853-a71c-cca56d24a5b8" Previous="39cf958a-fc3e-42d9-bd5f-2b9e8aff56db" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="SimulateSystem|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Location>bdaf4493-b0a2-47c4-a149-c5e9074772e6</Location>
+            <Xfrom>0</Xfrom>
+            <Yfrom>0</Yfrom>
+          </Properties>
+        </SimulateSystem.MouseLeftClick>
+        <Excel.Open type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10300" Name="Открыть" Description="" GUID="a19d9041-3a41-4853-a71c-cca56d24a5b8" Next="b88e01bf-77a6-4afa-ad9a-5bc96368058a" Previous="ac95a868-c4af-4b39-8919-90fe1b6232a7" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Excel|open" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <PathToFile>C:\Users\Viktory\Desktop\Тестовое Задание_Robin.xlsx</PathToFile>
+            <OpenVisible>true</OpenVisible>
+            <ContextProperty>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextProperty>
+          </Properties>
+        </Excel.Open>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Клик" Description="" GUID="b88e01bf-77a6-4afa-ad9a-5bc96368058a" Next="42dea298-574e-4234-9d5e-e38f3c826fd1" Previous="a19d9041-3a41-4853-a71c-cca56d24a5b8" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Web|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <XPath>/html/body/div[3]/div[3]/div/div/div[1]/div[2]/div/div/div/form/div[2]/div[3]</XPath>
+            <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+          </Properties>
+        </Web.Click>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="42dea298-574e-4234-9d5e-e38f3c826fd1" Next="54143e3d-64ac-4de1-961a-a295124db929" Previous="b88e01bf-77a6-4afa-ad9a-5bc96368058a" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[RETURN]]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Base.While type_guid="cf54adb4-ca9f-4aa7-be4b-1512a7255012" Name="Цикл Доллар" Description="" GUID="54143e3d-64ac-4de1-961a-a295124db929" Next="f3466296-a163-4c15-b966-8d8628d6754f" Previous="42dea298-574e-4234-9d5e-e38f3c826fd1" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Base|cycle" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <List>
+            <Web.GetText type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11014" Name="Получить текст" Description="" GUID="5bf18795-3d58-416e-a113-fdbdfd6c400b" Next="60c33a81-c6b7-4cac-846e-f5f207d608ee" Previous="" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Web|text" DelayTime="0" TryCatch="64ca7bb8-027c-4708-8a35-30a2482fe312" Breakpoint="false" Exclude="false">
+              <Properties>
+                <RemoveChildren>false</RemoveChildren>
+                <ReturnValueVariable>677f43c6-0f1d-4909-847b-acece75ec5f4</ReturnValueVariable>
+                <XPath>/html/body/div[3]/div[3]/div/div/div[1]/div[2]/div/div/div/form/div[5]/div[3]/table/tbody/tr[{Счетчик}]/td[1]</XPath>
+                <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+              </Properties>
+            </Web.GetText>
+            <Base.If type_guid="890c9edf-13b1-4678-b74d-0538e584528e" Name="Если" Description="" GUID="60c33a81-c6b7-4cac-846e-f5f207d608ee" Next="332bceae-9553-4aef-8a0a-39c35178b97b" Previous="5bf18795-3d58-416e-a113-fdbdfd6c400b" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Base|if" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <List>
+                <Base.CaseIf type_guid="BB8CD187-CFBA-43A8-9DE2-7100E877E0CF" Name="" Description="" GUID="07141dc2-0a23-4ba3-bf0e-338495e36e33" Next="" Previous="" Parent="60c33a81-c6b7-4cac-846e-f5f207d608ee" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                  <List />
+                  <Properties>
+                    <Condition>true</Condition>
+                  </Properties>
+                </Base.CaseIf>
+                <Base.CaseIf type_guid="BB8CD187-CFBA-43A8-9DE2-7100E877E0CF" Name="" Description="" GUID="34507631-5ee4-4b92-b2df-fa7b63ed918f" Next="" Previous="" Parent="60c33a81-c6b7-4cac-846e-f5f207d608ee" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                  <List>
+                    <Standard.BreakCycle type_guid="1e75ffae-de1d-462b-96b1-da4600d59d11" Name="Прервать цикл" Description="" GUID="07131b9d-0de6-4d36-9663-7c3701092d3b" Next="" Previous="" Parent="34507631-5ee4-4b92-b2df-fa7b63ed918f" UI_identifier="Base|cycle_stop" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                      <Properties />
+                    </Standard.BreakCycle>
+                  </List>
+                  <Properties>
+                    <Condition>false</Condition>
+                  </Properties>
+                </Base.CaseIf>
+              </List>
+              <Properties>
+                <Variable>Ошибка == ""</Variable>
+              </Properties>
+            </Base.If>
+            <Web.GetText type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11014" Name="Получить текст" Description="" GUID="332bceae-9553-4aef-8a0a-39c35178b97b" Next="3ec523a7-60c7-4bd0-81b0-98d7ae491ee1" Previous="60c33a81-c6b7-4cac-846e-f5f207d608ee" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Web|text" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <RemoveChildren>true</RemoveChildren>
+                <ReturnValueVariable>dfcb29a3-31ad-4379-a2a6-53af68391fa9</ReturnValueVariable>
+                <XPath>//*[@id="ctl00_PageContent_CurrencySelect"]/option[1]</XPath>
+                <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+              </Properties>
+            </Web.GetText>
+            <Web.GetText type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11014" Name="Получить текст" Description="" GUID="3ec523a7-60c7-4bd0-81b0-98d7ae491ee1" Next="6fb10e74-70d2-44c6-a674-9fcba7c8d9ae" Previous="332bceae-9553-4aef-8a0a-39c35178b97b" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Web|text" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <RemoveChildren>true</RemoveChildren>
+                <ReturnValueVariable>36d66f82-b3be-47d4-9d75-213bf24e6637</ReturnValueVariable>
+                <XPath>/html/body/div[3]/div[3]/div/div/div[1]/div[2]/div/div/div/form/div[5]/div[3]/table/tbody/tr[{Счетчик}]/td[4]</XPath>
+                <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+              </Properties>
+            </Web.GetText>
+            <Excel.SetValueCell type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10319" Name="Установить значение ячейки" Description="" GUID="6fb10e74-70d2-44c6-a674-9fcba7c8d9ae" Next="24f37a7c-baeb-49b3-81bd-d56565b6633b" Previous="3ec523a7-60c7-4bd0-81b0-98d7ae491ee1" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <EnableLog>true</EnableLog>
+                <Value>{Дата}</Value>
+                <AddressCell2></AddressCell2>
+                <CellAddress>A{Счетчик -1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SetValueCell>
+            <Excel.SetValueCell type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10319" Name="Установить значение ячейки" Description="" GUID="24f37a7c-baeb-49b3-81bd-d56565b6633b" Next="aaffe8f1-6510-464b-8b1a-cdfb234b051f" Previous="6fb10e74-70d2-44c6-a674-9fcba7c8d9ae" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <EnableLog>true</EnableLog>
+                <Value>{Курс}</Value>
+                <AddressCell2></AddressCell2>
+                <CellAddress>B{Счетчик -1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SetValueCell>
+            <Excel.SetValueCell type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10319" Name="Установить значение ячейки" Description="" GUID="aaffe8f1-6510-464b-8b1a-cdfb234b051f" Next="ec8142d2-d13e-4fdf-9db3-d5c66f98cf2c" Previous="24f37a7c-baeb-49b3-81bd-d56565b6633b" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <EnableLog>false</EnableLog>
+                <Value>{ИзменениеТ}</Value>
+                <AddressCell2></AddressCell2>
+                <CellAddress>C{Счетчик -1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SetValueCell>
+            <Excel.ExecuteOfFormula type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10329" Name="Исполнить формулу" Description="" GUID="ec8142d2-d13e-4fdf-9db3-d5c66f98cf2c" Next="2f339620-60dd-4209-b8cb-5e42e20e9724" Previous="aaffe8f1-6510-464b-8b1a-cdfb234b051f" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Excel|calculate" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+              <Properties>
+                <TextOfFormula>=РУБЛЬ(C{Счетчик -1};3)</TextOfFormula>
+                <AddressCell2></AddressCell2>
+                <CellAddress>C{Счетчик -1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.ExecuteOfFormula>
+            <Excel.SaveExcelDocument type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10305" Name="Сохранить документ" Description="" GUID="2f339620-60dd-4209-b8cb-5e42e20e9724" Next="dc942b7e-437b-4370-a81c-b12f8c3f996b" Previous="ec8142d2-d13e-4fdf-9db3-d5c66f98cf2c" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Excel|save" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <FileName></FileName>
+                <PathToSave></PathToSave>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SaveExcelDocument>
+            <Standard.SetVariable type_guid="59c686d3-1c13-44f2-af6c-52714c5eaa68" Name="Присвоить значение переменной" Description="" GUID="dc942b7e-437b-4370-a81c-b12f8c3f996b" Next="" Previous="2f339620-60dd-4209-b8cb-5e42e20e9724" Parent="54143e3d-64ac-4de1-961a-a295124db929" UI_identifier="Base|prisvoenie" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Value>Счетчик + 1</Value>
+                <ReturnValueVariable>691c4ece-0321-4480-825f-ed5a7eb9be7b</ReturnValueVariable>
+              </Properties>
+            </Standard.SetVariable>
+          </List>
+          <Properties>
+            <Variable>Дата != " "</Variable>
+          </Properties>
+        </Base.While>
+        <Web.Click type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11008" Name="Клик" Description="" GUID="f3466296-a163-4c15-b966-8d8628d6754f" Next="e1f569df-2095-4cf1-8da1-38e03bd92ef9" Previous="54143e3d-64ac-4de1-961a-a295124db929" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Web|click" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <XPath>/html/body/div[3]/div[3]/div/div/div[1]/div[2]/div/div/div/form/div[2]/div[3]</XPath>
+            <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+          </Properties>
+        </Web.Click>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="e1f569df-2095-4cf1-8da1-38e03bd92ef9" Next="2f7e54da-4c80-4746-8e83-fc8fc4f8cb70" Previous="f3466296-a163-4c15-b966-8d8628d6754f" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[DOWN]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <SimulateSystem.KeyPress type_guid="38c586b3-af13-477a-99a2-643d20789eea" Name="Горячие клавиши" Description="" GUID="2f7e54da-4c80-4746-8e83-fc8fc4f8cb70" Next="72dffe94-8717-479a-9167-d681df5b0385" Previous="e1f569df-2095-4cf1-8da1-38e03bd92ef9" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="SimulateSystem|keyboard" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <Keys>[RETURN]]</Keys>
+            <KeyCount2>1</KeyCount2>
+            <SleepKey>10</SleepKey>
+          </Properties>
+        </SimulateSystem.KeyPress>
+        <Base.While type_guid="cf54adb4-ca9f-4aa7-be4b-1512a7255012" Name="Цикл Евро" Description="" GUID="72dffe94-8717-479a-9167-d681df5b0385" Next="98d62409-30c8-459e-95a0-0d8dc8910a8a" Previous="2f7e54da-4c80-4746-8e83-fc8fc4f8cb70" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Base|cycle" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <List>
+            <Web.GetText type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11014" Name="Дата EUR/RUB" Description="" GUID="321867e0-28fc-47d7-aa76-76d14b973d9b" Next="794fa6e3-af22-4d39-b228-fcae45514c32" Previous="" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Web|text" DelayTime="0" TryCatch="df5e4b68-4aa5-4550-acf1-cc310ee4438f" Breakpoint="false" Exclude="false">
+              <Properties>
+                <RemoveChildren>false</RemoveChildren>
+                <ReturnValueVariable>da9b5e12-dbcd-4a4b-aa5b-d5f1922c35f4</ReturnValueVariable>
+                <XPath>/html/body/div[3]/div[3]/div/div/div[1]/div[2]/div/div/div/form/div[5]/div[3]/table/tbody/tr[{СчетчикЕвро}]/td[1]</XPath>
+                <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+              </Properties>
+            </Web.GetText>
+            <Base.If type_guid="890c9edf-13b1-4678-b74d-0538e584528e" Name="Если" Description="" GUID="794fa6e3-af22-4d39-b228-fcae45514c32" Next="3b5ff7d2-b7fe-454b-8c7c-2e560beefdec" Previous="321867e0-28fc-47d7-aa76-76d14b973d9b" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Base|if" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <List>
+                <Base.CaseIf type_guid="BB8CD187-CFBA-43A8-9DE2-7100E877E0CF" Name="" Description="" GUID="a70fd5ca-6503-475e-ac01-cb68a2452a54" Next="" Previous="" Parent="794fa6e3-af22-4d39-b228-fcae45514c32" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                  <List />
+                  <Properties>
+                    <Condition>true</Condition>
+                  </Properties>
+                </Base.CaseIf>
+                <Base.CaseIf type_guid="BB8CD187-CFBA-43A8-9DE2-7100E877E0CF" Name="" Description="" GUID="d4f75408-0019-4ec8-bab8-fb3014b3096a" Next="" Previous="" Parent="794fa6e3-af22-4d39-b228-fcae45514c32" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                  <List>
+                    <Standard.BreakCycle type_guid="1e75ffae-de1d-462b-96b1-da4600d59d11" Name="Прервать цикл" Description="" GUID="b0ff5345-b756-44de-a32b-70dea7b3afb6" Next="" Previous="" Parent="d4f75408-0019-4ec8-bab8-fb3014b3096a" UI_identifier="Base|cycle_stop" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                      <Properties />
+                    </Standard.BreakCycle>
+                  </List>
+                  <Properties>
+                    <Condition>false</Condition>
+                  </Properties>
+                </Base.CaseIf>
+              </List>
+              <Properties>
+                <Variable>Ошибка2 == ""</Variable>
+              </Properties>
+            </Base.If>
+            <Web.GetText type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11014" Name="EUR/RUB" Description="" GUID="3b5ff7d2-b7fe-454b-8c7c-2e560beefdec" Next="cee501d8-521a-4be2-93ff-77810dacda49" Previous="794fa6e3-af22-4d39-b228-fcae45514c32" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Web|text" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <RemoveChildren>true</RemoveChildren>
+                <ReturnValueVariable>adbd4bbc-3174-45e1-afaa-bce1589cf242</ReturnValueVariable>
+                <XPath>//*[@id="ctl00_PageContent_CurrencySelect"]/option[2]</XPath>
+                <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+              </Properties>
+            </Web.GetText>
+            <Web.GetText type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c11014" Name="Изменение EUR/RUB" Description="" GUID="cee501d8-521a-4be2-93ff-77810dacda49" Next="855f0db9-4fc1-449a-96e0-65220375fd82" Previous="3b5ff7d2-b7fe-454b-8c7c-2e560beefdec" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Web|text" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <RemoveChildren>true</RemoveChildren>
+                <ReturnValueVariable>d7094b89-a15f-4f13-a2bb-d6b548f23479</ReturnValueVariable>
+                <XPath>/html/body/div[3]/div[3]/div/div/div[1]/div[2]/div/div/div/form/div[5]/div[3]/table/tbody/tr[{СчетчикЕвро}]/td[4]</XPath>
+                <ContextName>a6b4efe4-bf12-4e02-bc57-9d305cf892a9</ContextName>
+              </Properties>
+            </Web.GetText>
+            <Excel.SetValueCell type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10319" Name="Установить значение ячейки" Description="" GUID="855f0db9-4fc1-449a-96e0-65220375fd82" Next="5e6273fa-e51b-452d-b608-4613b1e3c788" Previous="cee501d8-521a-4be2-93ff-77810dacda49" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <EnableLog>true</EnableLog>
+                <Value>{ДатаЕвро}</Value>
+                <AddressCell2></AddressCell2>
+                <CellAddress>D{СчетчикЕвро -1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SetValueCell>
+            <Excel.SetValueCell type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10319" Name="Установить значение ячейки" Description="" GUID="5e6273fa-e51b-452d-b608-4613b1e3c788" Next="6ea0cea7-ead1-452f-9797-00d3bbe2a0e5" Previous="855f0db9-4fc1-449a-96e0-65220375fd82" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <EnableLog>true</EnableLog>
+                <Value>{КурсЕвро}</Value>
+                <AddressCell2></AddressCell2>
+                <CellAddress>E{СчетчикЕвро -1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SetValueCell>
+            <Excel.SetValueCell type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10319" Name="Установить значение ячейки" Description="" GUID="6ea0cea7-ead1-452f-9797-00d3bbe2a0e5" Next="5a49d03e-57c6-4391-927d-f9eea5d205c0" Previous="5e6273fa-e51b-452d-b608-4613b1e3c788" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <EnableLog>false</EnableLog>
+                <Value>{ИзменениеЕвро}</Value>
+                <AddressCell2></AddressCell2>
+                <CellAddress>F{СчетчикЕвро -1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SetValueCell>
+            <Excel.ExecuteOfFormula type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10329" Name="Исполнить формулу" Description="" GUID="5a49d03e-57c6-4391-927d-f9eea5d205c0" Next="0abd17e4-f6ee-4192-937a-d3097c865ab3" Previous="6ea0cea7-ead1-452f-9797-00d3bbe2a0e5" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Excel|calculate" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+              <Properties>
+                <TextOfFormula>=ЗНАЧЕН(F{СчетчикЕвро-1})</TextOfFormula>
+                <AddressCell2></AddressCell2>
+                <CellAddress>F{СчетчикЕвро-1}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.ExecuteOfFormula>
+            <Excel.SaveExcelDocument type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10305" Name="Сохранить документ" Description="" GUID="0abd17e4-f6ee-4192-937a-d3097c865ab3" Next="ca095bd6-3580-47bc-ad9b-6a66e5475b9e" Previous="5a49d03e-57c6-4391-927d-f9eea5d205c0" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Excel|save" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <FileName></FileName>
+                <PathToSave></PathToSave>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SaveExcelDocument>
+            <Standard.SetVariable type_guid="59c686d3-1c13-44f2-af6c-52714c5eaa68" Name="Присвоить значение переменной" Description="" GUID="ca095bd6-3580-47bc-ad9b-6a66e5475b9e" Next="" Previous="0abd17e4-f6ee-4192-937a-d3097c865ab3" Parent="72dffe94-8717-479a-9167-d681df5b0385" UI_identifier="Base|prisvoenie" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Value>СчетчикЕвро + 1</Value>
+                <ReturnValueVariable>24d4c72e-bc4f-4b94-903e-1dcf446424bb</ReturnValueVariable>
+              </Properties>
+            </Standard.SetVariable>
+          </List>
+          <Properties>
+            <Variable>ДатаЕвро != " "</Variable>
+          </Properties>
+        </Base.While>
+        <Excel.GetValueFromColumn type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10320" Name="МассивИзменениеДоллар" Description="" GUID="98d62409-30c8-459e-95a0-0d8dc8910a8a" Next="08c61e9c-3ff3-4999-9525-bea019c9a1a6" Previous="72dffe94-8717-479a-9167-d681df5b0385" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <ReturnValueVariable>96a4a2e2-01be-4b2d-becc-2897a60b0b3a</ReturnValueVariable>
+            <ColName></ColName>
+            <ColumnName>C</ColumnName>
+            <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+          </Properties>
+        </Excel.GetValueFromColumn>
+        <Excel.GetValueFromColumn type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10320" Name="МассивИзменениеЕвро" Description="" GUID="08c61e9c-3ff3-4999-9525-bea019c9a1a6" Next="118b3c8c-84f7-4f42-abfe-fac601fbe334" Previous="98d62409-30c8-459e-95a0-0d8dc8910a8a" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <ReturnValueVariable>1b78dfba-ad88-4335-bf26-cf96d89c77b6</ReturnValueVariable>
+            <ColName></ColName>
+            <ColumnName>F</ColumnName>
+            <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+          </Properties>
+        </Excel.GetValueFromColumn>
+        <Base.Foreach type_guid="9c541ca3-1710-4aa1-9267-f86b55d7ef15" Name="Цикл 'Для каждого'" Description="" GUID="118b3c8c-84f7-4f42-abfe-fac601fbe334" Next="981d8a92-3dc6-48ff-a5d7-37053f4139cc" Previous="08c61e9c-3ff3-4999-9525-bea019c9a1a6" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Base|cycle" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <List>
+            <Excel.ExecuteOfFormula type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10329" Name="Исполнить формулу" Description="" GUID="78eaece9-59ea-4640-991e-8cafb9f6fc20" Next="eaf5e349-851c-4b7b-8b54-cc74c6d378ed" Previous="" Parent="118b3c8c-84f7-4f42-abfe-fac601fbe334" UI_identifier="Excel|calculate" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <TextOfFormula>=(C{СчетчикМассив})/(F{СчетчикМассив})</TextOfFormula>
+                <AddressCell2></AddressCell2>
+                <CellAddress>G{СчетчикМассив}</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.ExecuteOfFormula>
+            <Standard.SetVariable type_guid="59c686d3-1c13-44f2-af6c-52714c5eaa68" Name="Присвоить значение переменной" Description="" GUID="eaf5e349-851c-4b7b-8b54-cc74c6d378ed" Next="a5d33311-9060-499c-ae82-99504d7aed84" Previous="78eaece9-59ea-4640-991e-8cafb9f6fc20" Parent="118b3c8c-84f7-4f42-abfe-fac601fbe334" UI_identifier="Base|prisvoenie" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <Value>СчетчикМассив + 1</Value>
+                <ReturnValueVariable>2adcb096-e3ea-487f-bdfd-40fa867dbea9</ReturnValueVariable>
+              </Properties>
+            </Standard.SetVariable>
+            <Excel.SetValueCell type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10319" Name="Установить значение ячейки" Description="" GUID="a5d33311-9060-499c-ae82-99504d7aed84" Next="6d965121-28ed-4f01-83f9-2bfdb6a1e2a9" Previous="eaf5e349-851c-4b7b-8b54-cc74c6d378ed" Parent="118b3c8c-84f7-4f42-abfe-fac601fbe334" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="true">
+              <Properties>
+                <EnableLog>true</EnableLog>
+                <Value>{Деление}</Value>
+                <AddressCell2></AddressCell2>
+                <CellAddress>G</CellAddress>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SetValueCell>
+            <Base.If type_guid="890c9edf-13b1-4678-b74d-0538e584528e" Name="Если" Description="" GUID="6d965121-28ed-4f01-83f9-2bfdb6a1e2a9" Next="162c92da-5954-496d-bb97-ccb88b72a1e2" Previous="a5d33311-9060-499c-ae82-99504d7aed84" Parent="118b3c8c-84f7-4f42-abfe-fac601fbe334" UI_identifier="Base|if" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <List>
+                <Base.CaseIf type_guid="BB8CD187-CFBA-43A8-9DE2-7100E877E0CF" Name="" Description="" GUID="3257affe-0463-4482-844d-1a01ab7fd496" Next="" Previous="" Parent="6d965121-28ed-4f01-83f9-2bfdb6a1e2a9" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                  <List>
+                    <Standard.BreakCycle type_guid="1e75ffae-de1d-462b-96b1-da4600d59d11" Name="Прервать цикл" Description="" GUID="5b32e510-87b9-4f5a-8acf-8dd30a927fe5" Next="" Previous="" Parent="3257affe-0463-4482-844d-1a01ab7fd496" UI_identifier="Base|cycle_stop" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                      <Properties />
+                    </Standard.BreakCycle>
+                  </List>
+                  <Properties>
+                    <Condition>true</Condition>
+                  </Properties>
+                </Base.CaseIf>
+                <Base.CaseIf type_guid="BB8CD187-CFBA-43A8-9DE2-7100E877E0CF" Name="" Description="" GUID="9ec761b5-2239-4f04-a0e0-c0cfb6798b09" Next="" Previous="" Parent="6d965121-28ed-4f01-83f9-2bfdb6a1e2a9" UI_identifier="" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+                  <List />
+                  <Properties>
+                    <Condition>false</Condition>
+                  </Properties>
+                </Base.CaseIf>
+              </List>
+              <Properties>
+                <Variable>ИзменениеТ == " "</Variable>
+              </Properties>
+            </Base.If>
+            <Excel.SaveExcelDocument type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10305" Name="Сохранить документ" Description="" GUID="162c92da-5954-496d-bb97-ccb88b72a1e2" Next="" Previous="6d965121-28ed-4f01-83f9-2bfdb6a1e2a9" Parent="118b3c8c-84f7-4f42-abfe-fac601fbe334" UI_identifier="Excel|save" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+              <Properties>
+                <FileName></FileName>
+                <PathToSave></PathToSave>
+                <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+              </Properties>
+            </Excel.SaveExcelDocument>
+          </List>
+          <Properties>
+            <ArrayVariable>96a4a2e2-01be-4b2d-becc-2897a60b0b3a</ArrayVariable>
+            <Variable>36d66f82-b3be-47d4-9d75-213bf24e6637</Variable>
+          </Properties>
+        </Base.Foreach>
+        <Excel.GetCountRows type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10331" Name="Количество строк" Description="" GUID="981d8a92-3dc6-48ff-a5d7-37053f4139cc" Next="b41db17a-5e6e-47b1-841b-1c4651b04ed6" Previous="118b3c8c-84f7-4f42-abfe-fac601fbe334" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Excel|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <WithNullRows>false</WithNullRows>
+            <ReturnValueVariable>82dda0da-0907-488c-8ffd-4be11fa36072</ReturnValueVariable>
+            <ColName></ColName>
+            <ColumnName>A</ColumnName>
+            <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+          </Properties>
+        </Excel.GetCountRows>
+        <Excel.Close type_guid="a95cbc1d-b583-4bbb-9339-5d54b1c10314" Name="Закрыть" Description="" GUID="b41db17a-5e6e-47b1-841b-1c4651b04ed6" Next="2c04f81e-3aa5-4d6b-9a57-8030f3864c42" Previous="981d8a92-3dc6-48ff-a5d7-37053f4139cc" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Excel|close" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <ContextName>fb9403b4-681f-49ca-8f7c-092d41db41cc</ContextName>
+          </Properties>
+        </Excel.Close>
+        <Email.OpenEmail type_guid="88d550f1-efc4-409a-a0e5-5ef22964e6b6" Name="Настройки подключения" Description="" GUID="2c04f81e-3aa5-4d6b-9a57-8030f3864c42" Next="23a0561a-757f-477f-b52d-a955c25885ff" Previous="b41db17a-5e6e-47b1-841b-1c4651b04ed6" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Email|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <EnableLog>true</EnableLog>
+            <Typ>eSMTP</Typ>
+            <URL>smtp.yandex.ua</URL>
+            <Port>465</Port>
+            <SSL>true</SSL>
+            <TLS>false</TLS>
+            <User>b.vicka2014@yandex.ru</User>
+            <Password>kcbtfnkgkpwvyney</Password>
+            <Credentials>00000000-0000-0000-0000-000000000000</Credentials>
+            <ContextProperty>8656a9b9-b8ee-4f68-b46b-025aa3426bfd</ContextProperty>
+          </Properties>
+        </Email.OpenEmail>
+        <Email.SendMessage type_guid="60771840-b625-4340-8e4a-07f123a5816b" Name="Отправить сообщение" Description="" GUID="23a0561a-757f-477f-b52d-a955c25885ff" Next="" Previous="2c04f81e-3aa5-4d6b-9a57-8030f3864c42" Parent="d7792821-7431-49fc-a346-ed5c275e4003" UI_identifier="Email|" DelayTime="0" TryCatch="00000000-0000-0000-0000-000000000000" Breakpoint="false" Exclude="false">
+          <Properties>
+            <EnableLog>true</EnableLog>
+            <From>b.vicka2014@yandex.ru</From>
+            <To>b.vicka2014@yandex.ru</To>
+            <Subject>Тестовое задание</Subject>
+            <Body>{КоличествоСтрок} строки</Body>
+            <CC></CC>
+            <MessageId></MessageId>
+            <Attachments>C:\Users\Viktory\Desktop\Тестовое Задание_Robin.xlsx</Attachments>
+            <ContextName>8656a9b9-b8ee-4f68-b46b-025aa3426bfd</ContextName>
+          </Properties>
+        </Email.SendMessage>
+      </List>
+    </Base.Sequence>
+  </Schema>
+  <Variables>
+    <List>
+      <VariableArray type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" IsArray="true" Name="МассивДатаДоллар" GUID="e9a330ed-fa71-47ef-b663-00bdc79f7645" IsReturn="false">
+        <Value></Value>
+      </VariableArray>
+      <VariableArray type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" IsArray="true" Name="МассивИзменениеДоллар" GUID="96a4a2e2-01be-4b2d-becc-2897a60b0b3a" IsReturn="false">
+        <Value></Value>
+      </VariableArray>
+      <VariableArray type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" IsArray="true" Name="МассивИзменениеЕвро" GUID="1b78dfba-ad88-4335-bf26-cf96d89c77b6" IsReturn="false">
+        <Value></Value>
+      </VariableArray>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="КоличествоСтрок" GUID="82dda0da-0907-488c-8ffd-4be11fa36072" IsReturn="false">
+        <Value>0</Value>
+      </Variable.Decimal>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="Дата" GUID="677f43c6-0f1d-4909-847b-acece75ec5f4" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="Счетчик" GUID="691c4ece-0321-4480-825f-ed5a7eb9be7b" IsReturn="false">
+        <Value>3</Value>
+      </Variable.Decimal>
+      <Variable.Table type_guid="4bbc78a3-e61c-4161-b499-044211c5e4ec" Name="Таблица" GUID="4a7d3919-efdc-4970-a58d-5a63112b2e9a" IsReturn="false">
+        <Value>[]</Value>
+      </Variable.Table>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="Уведомление" GUID="e7cf204f-57ca-4ac5-bb3c-dcd496ff5dff" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="БлокироватьУведомления" GUID="d4649381-ab0e-4b71-b85c-e9e1918bad72" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Согласие" GUID="bdaf4493-b0a2-47c4-a149-c5e9074772e6" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <VariableArray type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" IsArray="true" Name="Variable0" GUID="fbf69484-9320-4a38-8726-c8efe66f4c8b" IsReturn="false">
+        <Value></Value>
+      </VariableArray>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="НомерСтроки" GUID="e475b5e5-c7eb-4787-b33b-e753278226f3" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="Курс" GUID="dfcb29a3-31ad-4379-a2a6-53af68391fa9" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="Изменение" GUID="4dbfe396-a102-49c8-960d-732ca49c9f3f" IsReturn="false">
+        <Value>0</Value>
+      </Variable.Decimal>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="ИзменениеТ" GUID="36d66f82-b3be-47d4-9d75-213bf24e6637" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="Ошибка" GUID="64ca7bb8-027c-4708-8a35-30a2482fe312" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="СчетчикЕвро" GUID="24d4c72e-bc4f-4b94-903e-1dcf446424bb" IsReturn="false">
+        <Value>3</Value>
+      </Variable.Decimal>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="Ошибка2" GUID="df5e4b68-4aa5-4550-acf1-cc310ee4438f" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="ДатаЕвро" GUID="da9b5e12-dbcd-4a4b-aa5b-d5f1922c35f4" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="КурсЕвро" GUID="adbd4bbc-3174-45e1-afaa-bce1589cf242" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.String type_guid="405908d9-302a-4db7-a09a-59f23b9269c1" Name="ИзменениеЕвро" GUID="d7094b89-a15f-4f13-a2bb-d6b548f23479" IsReturn="false">
+        <Value></Value>
+      </Variable.String>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="Деление" GUID="fb348732-ba41-42ab-b398-723fefe9cfc8" IsReturn="false">
+        <Value>0</Value>
+      </Variable.Decimal>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="СчетчикМассив" GUID="2adcb096-e3ea-487f-bdfd-40fa867dbea9" IsReturn="false">
+        <Value>2</Value>
+      </Variable.Decimal>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Меню" GUID="6e850a5f-6a0c-4d93-a8ae-cb8a09dac983" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Object type_guid="6e2cadf1-4fee-4e7a-804b-fce32d0fbd3d" Name="Что" GUID="84f6e971-c564-4287-9702-c5a79847ecd7" IsReturn="false">
+        <Value></Value>
+      </Variable.Object>
+      <Variable.Decimal type_guid="e6b39109-e349-47ac-aa9e-96e5e2340f54" Name="СчетчикДоллар" GUID="c0003224-da8f-4389-966e-e9a08368e37f" IsReturn="false">
+        <Value>2</Value>
+      </Variable.Decimal>
+    </List>
+  </Variables>
+  <Contexts>
+    <List>
+      <ContextLT ContextType="ExcelInstance">
+        <List>
+          <Context ContextName="ExcelInstance0" GUID="fb9403b4-681f-49ca-8f7c-092d41db41cc" ActionGuid="a19d9041-3a41-4853-a71c-cca56d24a5b8" />
+        </List>
+      </ContextLT>
+      <ContextLT ContextType="WebInstance">
+        <List>
+          <Context ContextName="WebInstance1" GUID="a6b4efe4-bf12-4e02-bc57-9d305cf892a9" ActionGuid="db25b599-5735-412d-b4af-1ea1580c3483" />
+        </List>
+      </ContextLT>
+      <ContextLT ContextType="XmlInstatnce">
+        <List />
+      </ContextLT>
+      <ContextLT ContextType="EmailInstance">
+        <List>
+          <Context ContextName="EmailInstance0" GUID="8656a9b9-b8ee-4f68-b46b-025aa3426bfd" ActionGuid="2c04f81e-3aa5-4d6b-9a57-8030f3864c42" />
+        </List>
+      </ContextLT>
+    </List>
+  </Contexts>
+</Robot>
